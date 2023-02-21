@@ -1408,7 +1408,9 @@ pre {
   background-clip: padding-box;
   border: 1px solid #2c2e33;
   border-radius: 2px;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
+}
+
   @media (prefers-reduced-motion: reduce) {
     .form-control, .asColorPicker-input, .dataTables_wrapper select, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text],
     .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .select2-container--default .select2-selection--single, .select2-container--default .select2-selection--single .select2-search__field, .typeahead,
@@ -1452,7 +1454,10 @@ pre {
     background-color: #e9ecef;
     opacity: 1; }
 
-input[type="date"].form-control, input.asColorPicker-input[type="date"], .jsgrid .jsgrid-table .jsgrid-filter-row input[type="date"][type=text], .jsgrid .jsgrid-table .jsgrid-filter-row input[type="date"][type=number], .select2-container--default input.select2-selection--single[type="date"], .select2-container--default .select2-selection--single input.select2-search__field[type="date"], input.typeahead[type="date"],
+input[type="date"].form-control, input.asColorPicker-input[type="date"], 
+.jsgrid .jsgrid-table .jsgrid-filter-row input[type="date"][type=text], .jsgrid .jsgrid-table .jsgrid-filter-row input[type="date"][type=number], 
+.select2-container--default input.select2-selection--single[type="date"], .select2-container--default 
+.select2-selection--single input.select2-search__field[type="date"], input.typeahead[type="date"],
 input.tt-query[type="date"],
 input.tt-hint[type="date"],
 input[type="time"].form-control,
@@ -1482,7 +1487,8 @@ input.asColorPicker-input[type="month"],
 input.typeahead[type="month"],
 input.tt-query[type="month"],
 input.tt-hint[type="month"] {
-  appearance: none; }
+  appearance: none; 
+}
 
 select.form-control:focus::-ms-value, select.asColorPicker-input:focus::-ms-value, .dataTables_wrapper select:focus::-ms-value,
 .jsgrid .jsgrid-table .jsgrid-filter-row select:focus::-ms-value, .select2-container--default select.select2-selection--single:focus::-ms-value, .select2-container--default .select2-selection--single select.select2-search__field:focus::-ms-value, select.typeahead:focus::-ms-value,
@@ -1583,10 +1589,13 @@ textarea.tt-hint {
 .form-check-input {
   position: absolute;
   margin-top: 0.3rem;
-  margin-left: -1.25rem; }
-  .form-check-input[disabled] ~ .form-check-label,
-  .form-check-input:disabled ~ .form-check-label {
-    color: #6c7293; }
+  margin-left: -1.25rem; 
+}
+
+.form-check-input[disabled] ~ .form-check-label,
+.form-check-input:disabled ~ .form-check-label {
+  color: #6c7293; 
+}
 
 .form-check-label {
   margin-bottom: 0; }
@@ -2785,7 +2794,20 @@ input[type="button"].btn-block {
     width: 1%;
     min-width: 0;
     margin-bottom: 0; }
-    .input-group > .form-control + .form-control, .asColorPicker-wrap > .form-control + .form-control, .input-group > .asColorPicker-input + .form-control, .asColorPicker-wrap > .asColorPicker-input + .form-control, .dataTables_wrapper .input-group > select + .form-control, .dataTables_wrapper .asColorPicker-wrap > select + .form-control, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=text] + .form-control, .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=text] + .form-control, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > select + .form-control, .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > select + .form-control, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=number] + .form-control, .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=number] + .form-control, .select2-container--default .input-group > .select2-selection--single + .form-control, .select2-container--default .asColorPicker-wrap > .select2-selection--single + .form-control, .select2-container--default .select2-selection--single .input-group > .select2-search__field + .form-control, .select2-container--default .select2-selection--single .asColorPicker-wrap > .select2-search__field + .form-control, .input-group > .typeahead + .form-control, .asColorPicker-wrap > .typeahead + .form-control, .input-group > .tt-query + .form-control, .asColorPicker-wrap > .tt-query + .form-control, .input-group > .tt-hint + .form-control, .asColorPicker-wrap > .tt-hint + .form-control, .input-group > .form-control + .asColorPicker-input, .asColorPicker-wrap > .form-control + .asColorPicker-input, .input-group > .asColorPicker-input + .asColorPicker-input, .asColorPicker-wrap > .asColorPicker-input + .asColorPicker-input, .dataTables_wrapper .input-group > select + .asColorPicker-input, .dataTables_wrapper .asColorPicker-wrap > select + .asColorPicker-input, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=text] + .asColorPicker-input, .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=text] + .asColorPicker-input, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > select + .asColorPicker-input, .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > select + .asColorPicker-input, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=number] + .asColorPicker-input, .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=number] + .asColorPicker-input, .select2-container--default .input-group > .select2-selection--single + .asColorPicker-input, .select2-container--default .asColorPicker-wrap > .select2-selection--single + .asColorPicker-input, .select2-container--default .select2-selection--single .input-group > .select2-search__field + .asColorPicker-input, .select2-container--default .select2-selection--single .asColorPicker-wrap > .select2-search__field + .asColorPicker-input, .input-group > .typeahead + .asColorPicker-input, .asColorPicker-wrap > .typeahead + .asColorPicker-input, .input-group > .tt-query + .asColorPicker-input, .asColorPicker-wrap > .tt-query + .asColorPicker-input, .input-group > .tt-hint + .asColorPicker-input, .asColorPicker-wrap > .tt-hint + .asColorPicker-input, .dataTables_wrapper .input-group > .form-control + select, .dataTables_wrapper .asColorPicker-wrap > .form-control + select, .dataTables_wrapper .input-group > .asColorPicker-input + select, .dataTables_wrapper .asColorPicker-wrap > .asColorPicker-input + select, .dataTables_wrapper .input-group > select + select, .dataTables_wrapper .asColorPicker-wrap > select + select, .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .input-group > input[type=text] + select, .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=text] + select, .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .asColorPicker-wrap > input[type=text] + select, .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=text] + select, .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .input-group > select + select, .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > select + select, .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .asColorPicker-wrap > select + select, .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > select + select, .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .input-group > input[type=number] + select, .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=number] + select, .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .asColorPicker-wrap > input[type=number] + select, .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=number] + select, .select2-container--default .dataTables_wrapper .input-group > .select2-selection--single + select, .dataTables_wrapper .select2-container--default .input-group > .select2-selection--single + select, .select2-container--default .dataTables_wrapper .asColorPicker-wrap > .select2-selection--single + select, .dataTables_wrapper .select2-container--default .asColorPicker-wrap > .select2-selection--single + select, .select2-container--default .select2-selection--single .dataTables_wrapper .input-group > .select2-search__field + select, .dataTables_wrapper .select2-container--default .select2-selection--single .input-group > .select2-search__field + select, .select2-container--default .select2-selection--single .dataTables_wrapper .asColorPicker-wrap > .select2-search__field + select, .dataTables_wrapper .select2-container--default .select2-selection--single .asColorPicker-wrap > .select2-search__field + select, .dataTables_wrapper .input-group > .typeahead + select, .dataTables_wrapper .asColorPicker-wrap > .typeahead + select, .dataTables_wrapper .input-group > .tt-query + select, .dataTables_wrapper .asColorPicker-wrap > .tt-query + select, .dataTables_wrapper .input-group > .tt-hint + select, .dataTables_wrapper .asColorPicker-wrap > .tt-hint + select, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .form-control + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .form-control + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .asColorPicker-input + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .asColorPicker-input + input[type=text], .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > select + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .input-group > select + input[type=text], .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > select + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .asColorPicker-wrap > select + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=text] + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=text] + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > select + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > select + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=number] + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=number] + input[type=text], .select2-container--default .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .select2-selection--single + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .select2-container--default .input-group > .select2-selection--single + input[type=text], .select2-container--default .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .select2-selection--single + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .select2-container--default .asColorPicker-wrap > .select2-selection--single + input[type=text], .select2-container--default .select2-selection--single .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .select2-search__field + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .select2-container--default .select2-selection--single .input-group > .select2-search__field + input[type=text], .select2-container--default .select2-selection--single .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .select2-search__field + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .select2-container--default .select2-selection--single .asColorPicker-wrap > .select2-search__field + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .typeahead + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .typeahead + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .tt-query + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .tt-query + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .tt-hint + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .tt-hint + input[type=text],
+    /* .input-group > .form-control + .form-control, .asColorPicker-wrap > .form-control + .form-control, 
+    .input-group > .asColorPicker-input + .form-control, .asColorPicker-wrap > 
+    .asColorPicker-input + .form-control, .dataTables_wrapper .input-group > select + .form-control, .dataTables_wrapper 
+    .asColorPicker-wrap > select + .form-control, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=text] + .form-control, 
+    .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=text] + .form-control, 
+    .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > select + .form-control, 
+    .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > select + .form-control, 
+    .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=number] + .form-control, 
+    .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=number] + .form-control, 
+    .select2-container--default .input-group > .select2-selection--single + .form-control, 
+    .select2-container--default .asColorPicker-wrap > .select2-selection--single + .form-control, 
+    .select2-container--default .select2-selection--single .input-group > .select2-search__field + .form-control, 
+    .select2-container--default .select2-selection--single .asColorPicker-wrap > .select2-search__field + .form-control, 
+    .input-group > .typeahead + .form-control, .asColorPicker-wrap > .typeahead + .form-control, .input-group > .tt-query + .form-control, .asColorPicker-wrap > .tt-query + .form-control, .input-group > .tt-hint + .form-control, .asColorPicker-wrap > .tt-hint + .form-control, .input-group > .form-control + .asColorPicker-input, .asColorPicker-wrap > .form-control + .asColorPicker-input, .input-group > .asColorPicker-input + .asColorPicker-input, .asColorPicker-wrap > .asColorPicker-input + .asColorPicker-input, .dataTables_wrapper .input-group > select + .asColorPicker-input, .dataTables_wrapper .asColorPicker-wrap > select + .asColorPicker-input, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=text] + .asColorPicker-input, .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=text] + .asColorPicker-input, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > select + .asColorPicker-input, .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > select + .asColorPicker-input, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=number] + .asColorPicker-input, .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=number] + .asColorPicker-input, .select2-container--default .input-group > .select2-selection--single + .asColorPicker-input, .select2-container--default .asColorPicker-wrap > .select2-selection--single + .asColorPicker-input, .select2-container--default .select2-selection--single .input-group > .select2-search__field + .asColorPicker-input, .select2-container--default .select2-selection--single .asColorPicker-wrap > .select2-search__field + .asColorPicker-input, .input-group > .typeahead + .asColorPicker-input, .asColorPicker-wrap > .typeahead + .asColorPicker-input, .input-group > .tt-query + .asColorPicker-input, .asColorPicker-wrap > .tt-query + .asColorPicker-input, .input-group > .tt-hint + .asColorPicker-input, .asColorPicker-wrap > .tt-hint + .asColorPicker-input, .dataTables_wrapper .input-group > .form-control + select, .dataTables_wrapper .asColorPicker-wrap > .form-control + select, .dataTables_wrapper .input-group > .asColorPicker-input + select, .dataTables_wrapper .asColorPicker-wrap > .asColorPicker-input + select, .dataTables_wrapper .input-group > select + select, .dataTables_wrapper .asColorPicker-wrap > select + select, .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .input-group > input[type=text] + select, .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=text] + select, .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .asColorPicker-wrap > input[type=text] + select, .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=text] + select, .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .input-group > select + select, .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > select + select, .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .asColorPicker-wrap > select + select, .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > select + select, .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .input-group > input[type=number] + select, .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=number] + select, .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .asColorPicker-wrap > input[type=number] + select, .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=number] + select, .select2-container--default .dataTables_wrapper .input-group > .select2-selection--single + select, .dataTables_wrapper .select2-container--default .input-group > .select2-selection--single + select, .select2-container--default .dataTables_wrapper .asColorPicker-wrap > .select2-selection--single + select, .dataTables_wrapper .select2-container--default .asColorPicker-wrap > .select2-selection--single + select, .select2-container--default .select2-selection--single .dataTables_wrapper .input-group > .select2-search__field + select, .dataTables_wrapper .select2-container--default .select2-selection--single .input-group > .select2-search__field + select, .select2-container--default .select2-selection--single .dataTables_wrapper .asColorPicker-wrap > .select2-search__field + select, .dataTables_wrapper .select2-container--default .select2-selection--single .asColorPicker-wrap > .select2-search__field + select, .dataTables_wrapper .input-group > .typeahead + select, .dataTables_wrapper .asColorPicker-wrap > .typeahead + select, .dataTables_wrapper .input-group > .tt-query + select, .dataTables_wrapper .asColorPicker-wrap > .tt-query + select, .dataTables_wrapper .input-group > .tt-hint + select, .dataTables_wrapper .asColorPicker-wrap > .tt-hint + select, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .form-control + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .form-control + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .asColorPicker-input + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .asColorPicker-input + input[type=text], .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > select + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .input-group > select + input[type=text], .dataTables_wrapper .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > select + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .dataTables_wrapper .asColorPicker-wrap > select + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=text] + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=text] + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > select + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > select + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input[type=number] + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input[type=number] + input[type=text], .select2-container--default .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .select2-selection--single + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .select2-container--default .input-group > .select2-selection--single + input[type=text], .select2-container--default .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .select2-selection--single + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .select2-container--default .asColorPicker-wrap > .select2-selection--single + input[type=text], .select2-container--default .select2-selection--single .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .select2-search__field + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .select2-container--default .select2-selection--single .input-group > .select2-search__field + input[type=text], .select2-container--default .select2-selection--single .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .select2-search__field + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .select2-container--default .select2-selection--single .asColorPicker-wrap > .select2-search__field + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .typeahead + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .typeahead + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .tt-query + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .tt-query + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .tt-hint + input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .tt-hint + input[type=text],
     .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .form-control + select,
     .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > .form-control + select,
     .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > .asColorPicker-input + select,
@@ -2974,8 +2996,8 @@ input[type="button"].btn-block {
     .asColorPicker-wrap > .custom-file + .custom-select,
     .input-group > .custom-file + .custom-file,
     .asColorPicker-wrap > .custom-file + .custom-file {
-      margin-left: -1px; }
-  .input-group > .form-control:focus, .asColorPicker-wrap > .form-control:focus, .input-group > .asColorPicker-input:focus, .asColorPicker-wrap > .asColorPicker-input:focus, .dataTables_wrapper .input-group > select:focus, .dataTables_wrapper .asColorPicker-wrap > select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input:focus[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input:focus[type=text],
+      margin-left: -1px; } */
+  /* .input-group > .form-control:focus, .asColorPicker-wrap > .form-control:focus, .input-group > .asColorPicker-input:focus, .asColorPicker-wrap > .asColorPicker-input:focus, .dataTables_wrapper .input-group > select:focus, .dataTables_wrapper .asColorPicker-wrap > select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input:focus[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input:focus[type=text],
   .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > select:focus,
   .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .input-group > input:focus[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .asColorPicker-wrap > input:focus[type=number], .select2-container--default .input-group > .select2-selection--single:focus, .select2-container--default .asColorPicker-wrap > .select2-selection--single:focus, .select2-container--default .select2-selection--single .input-group > .select2-search__field:focus, .select2-container--default .select2-selection--single .asColorPicker-wrap > .select2-search__field:focus, .input-group > .typeahead:focus, .asColorPicker-wrap > .typeahead:focus,
   .input-group > .tt-query:focus,
@@ -3023,9 +3045,9 @@ input[type="button"].btn-block {
       border-bottom-right-radius: 0; }
     .input-group > .custom-file:not(:first-child) .custom-file-label, .asColorPicker-wrap > .custom-file:not(:first-child) .custom-file-label {
       border-top-left-radius: 0;
-      border-bottom-left-radius: 0; }
+      border-bottom-left-radius: 0; } */
 
-.input-group-prepend,
+/* .input-group-prepend,
 .input-group-append {
   display: flex; }
   .input-group-prepend .btn, .input-group-prepend .fc button, .fc .input-group-prepend button, .input-group-prepend .ajax-upload-dragdrop .ajax-file-upload, .ajax-upload-dragdrop .input-group-prepend .ajax-file-upload, .input-group-prepend .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .input-group-prepend .swal2-styled, .input-group-prepend .wizard > .actions a, .wizard > .actions .input-group-prepend a,
@@ -3163,7 +3185,7 @@ input[type="button"].btn-block {
   .swal2-modal .swal2-buttonswrapper .input-group-append .input-group-text + .swal2-styled,
   .input-group-append .wizard > .actions .input-group-text + a,
   .wizard > .actions .input-group-append .input-group-text + a {
-    margin-left: -1px; }
+    margin-left: -1px; } */
 
 .input-group-prepend {
   margin-right: -1px; }
@@ -3185,7 +3207,7 @@ input[type="button"].btn-block {
   background-color: #e9ecef;
   border: 1px solid #ced4da;
   border-radius: 2px; }
-  .input-group-text input[type="radio"],
+  /* .input-group-text input[type="radio"],
   .input-group-text input[type="checkbox"] {
     margin-top: 0; }
 
@@ -3216,9 +3238,9 @@ input[type="button"].btn-block {
   padding: 0.94rem 1.94rem;
   font-size: 1.25rem;
   line-height: 1.5;
-  border-radius: 0.3rem; }
+  border-radius: 0.3rem; } */
 
-.input-group-sm > .form-control:not(textarea), .input-group-sm > .asColorPicker-input:not(textarea), .dataTables_wrapper .input-group-sm > select:not(textarea), .jsgrid .jsgrid-table .jsgrid-filter-row .input-group-sm > input:not(textarea)[type=text],
+/* .input-group-sm > .form-control:not(textarea), .input-group-sm > .asColorPicker-input:not(textarea), .dataTables_wrapper .input-group-sm > select:not(textarea), .jsgrid .jsgrid-table .jsgrid-filter-row .input-group-sm > input:not(textarea)[type=text],
 .jsgrid .jsgrid-table .jsgrid-filter-row .input-group-sm > select:not(textarea), .jsgrid .jsgrid-table .jsgrid-filter-row .input-group-sm > input:not(textarea)[type=number], .select2-container--default .input-group-sm > .select2-selection--single:not(textarea), .select2-container--default .select2-selection--single .input-group-sm > .select2-search__field:not(textarea), .input-group-sm > .typeahead:not(textarea),
 .input-group-sm > .tt-query:not(textarea),
 .input-group-sm > .tt-hint:not(textarea),
@@ -3309,9 +3331,9 @@ input[type="button"].btn-block {
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
 .asColorPicker-wrap > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
-  border-bottom-left-radius: 0; }
+  border-bottom-left-radius: 0; } */
 
-.custom-control {
+/* .custom-control {
   position: relative;
   z-index: 1;
   display: block;
@@ -3398,7 +3420,7 @@ input[type="button"].btn-block {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e"); }
 
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(0, 123, 255, 0.5); }
+  background-color: rgba(0, 123, 255, 0.5); } */
 
 .custom-switch {
   padding-left: 2.25rem; }
@@ -3663,8 +3685,8 @@ input[type="button"].btn-block {
     border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem; }
-    .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-      border-color: #2c2e33 #2c2e33 #2c2e33; }
+    /* .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+      border-color: #2c2e33 #2c2e33 #2c2e33; } */
     .nav-tabs .nav-link.disabled {
       color: #6c757d;
       background-color: transparent;
@@ -3962,79 +3984,132 @@ input[type="button"].btn-block {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #fff; }
 
+/* card session */
 .card {
   position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #7b6ceb;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem; }
-  .card > hr {
-    margin-right: 0;
-    margin-left: 0; }
-  .card > .list-group {
-    border-top: inherit;
-    border-bottom: inherit; }
-    .card > .list-group:first-child {
-      border-top-width: 0;
-      border-top-left-radius: calc(0.25rem - 1px);
-      border-top-right-radius: calc(0.25rem - 1px); }
-    .card > .list-group:last-child {
-      border-bottom-width: 0;
-      border-bottom-right-radius: calc(0.25rem - 1px);
-      border-bottom-left-radius: calc(0.25rem - 1px); }
-  .card > .card-header + .list-group,
-  .card > .list-group + .card-footer {
-    border-top: 0; }
+  border-radius: 0.25rem; 
+}
+
+.card-box{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #7b6ceb;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #7b6ceb;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card > .list-group {
+  border-top: inherit;
+  border-bottom: inherit;
+}
+
+.card > .list-group:first-child {
+  border-top-width: 0;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card > .list-group:last-child {
+  border-bottom-width: 0;
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+.card > .card-header + .list-group,
+.card > .list-group + .card-footer {
+  border-top: 0;
+}
 
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem; }
+  padding: 1.25rem;
+}
 
 .card-title {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.75rem;
+}
 
 .card-subtitle {
   margin-top: -0.375rem;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 .card-text:last-child {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 .card-link:hover {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .card-link + .card-link {
-  margin-left: 1.25rem; }
+  margin-left: 1.25rem;
+}
 
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
-  .card-header:first-child {
-    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-header:first-child {
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
 
 .card-footer {
   padding: 0.75rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125); }
-  .card-footer:last-child {
-    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-footer:last-child {
+  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+}
 
 .card-header-tabs {
   margin-right: -0.625rem;
   margin-bottom: -0.75rem;
   margin-left: -0.625rem;
-  border-bottom: 0; }
+  border-bottom: 0;
+}
 
 .card-header-pills {
   margin-right: -0.625rem;
-  margin-left: -0.625rem; }
+  margin-left: -0.625rem;
+}
 
 .card-img-overlay {
   position: absolute;
@@ -4043,70 +4118,98 @@ input[type="button"].btn-block {
   bottom: 0;
   left: 0;
   padding: 1.25rem;
-  border-radius: calc(0.25rem - 1px); }
+  border-radius: calc(0.25rem - 1px);
+}
 
 .card-img,
 .card-img-top,
 .card-img-bottom {
   flex-shrink: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 .card-img,
 .card-img-top {
   border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px); }
+  border-top-right-radius: calc(0.25rem - 1px);
+}
 
 .card-img,
 .card-img-bottom {
   border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px); }
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
 
 .card-deck .card {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 
 @media (min-width: 576px) {
   .card-deck {
     display: flex;
     flex-flow: row wrap;
     margin-right: -15px;
-    margin-left: -15px; }
-    .card-deck .card {
-      flex: 1 0 0%;
-      margin-right: 15px;
-      margin-bottom: 0;
-      margin-left: 15px; } }
+    margin-left: -15px;
+  }
+
+  .card-deck .card {
+    flex: 1 0 0%;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px; 
+  }
+}
 
 .card-group > .card {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 
 @media (min-width: 576px) {
   .card-group {
     display: flex;
-    flex-flow: row wrap; }
-    .card-group > .card {
-      flex: 1 0 0%;
-      margin-bottom: 0; }
-      .card-group > .card + .card {
-        margin-left: 0;
-        border-left: 0; }
-      .card-group > .card:not(:last-child) {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0; }
-        .card-group > .card:not(:last-child) .card-img-top,
-        .card-group > .card:not(:last-child) .card-header {
-          border-top-right-radius: 0; }
-        .card-group > .card:not(:last-child) .card-img-bottom,
-        .card-group > .card:not(:last-child) .card-footer {
-          border-bottom-right-radius: 0; }
-      .card-group > .card:not(:first-child) {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0; }
-        .card-group > .card:not(:first-child) .card-img-top,
-        .card-group > .card:not(:first-child) .card-header {
-          border-top-left-radius: 0; }
-        .card-group > .card:not(:first-child) .card-img-bottom,
-        .card-group > .card:not(:first-child) .card-footer {
-          border-bottom-left-radius: 0; } }
+    flex-flow: row wrap;
+  }
+
+  .card-group > .card {
+    flex: 1 0 0%;
+    margin-bottom: 0;
+  }
+
+  .card-group > .card + .card {
+    margin-left: 0;
+    border-left: 0;
+  }
+
+  .card-group > .card:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .card-group > .card:not(:last-child) .card-img-top,
+  .card-group > .card:not(:last-child) .card-header {
+    border-top-right-radius: 0;
+  }
+
+  .card-group > .card:not(:last-child) .card-img-bottom,
+  .card-group > .card:not(:last-child) .card-footer {
+    border-bottom-right-radius: 0;
+  }
+
+  .card-group > .card:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .card-group > .card:not(:first-child) .card-img-top,
+  .card-group > .card:not(:first-child) .card-header {
+    border-top-left-radius: 0; 
+  }
+
+  .card-group > .card:not(:first-child) .card-img-bottom,
+  .card-group > .card:not(:first-child) .card-footer {
+    border-bottom-left-radius: 0;
+  }
+}
 
 .card-columns .card {
   margin-bottom: 0.75rem; }
@@ -10449,55 +10552,85 @@ div.tagsinput {
     font-size: 20px; }
 
 /* Tables */
+/* .table-order{
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+} */
+
 .table, .jsgrid .jsgrid-table {
   margin-bottom: 0;
-  color: #6c7293; }
-  .table thead th, .jsgrid .jsgrid-table thead th {
-    border-top: 0;
-    border-bottom-width: 1px;
-    font-weight: 500;
-    color: #6c7293; }
-    .table thead th i, .jsgrid .jsgrid-table thead th i {
-      margin-left: 0.325rem; }
-  .table th, .jsgrid .jsgrid-table th,
-  .table td,
-  .jsgrid .jsgrid-table td {
-    vertical-align: middle;
-    font-size: 0.875rem;
-    line-height: 1;
-    white-space: nowrap; }
-    .table th img, .jsgrid .jsgrid-table th img,
-    .table td img,
-    .jsgrid .jsgrid-table td img {
-      width: 30px;
-      height: 30px;
-      border-radius: 100%; }
-    .table th .badge, .jsgrid .jsgrid-table th .badge,
-    .table td .badge,
-    .jsgrid .jsgrid-table td .badge {
-      margin-bottom: 0; }
-  .table.table-borderless, .jsgrid .table-borderless.jsgrid-table {
-    border: none; }
-    .table.table-borderless tr, .jsgrid .table-borderless.jsgrid-table tr,
-    .table.table-borderless td,
-    .jsgrid .table-borderless.jsgrid-table td,
-    .table.table-borderless th,
-    .jsgrid .table-borderless.jsgrid-table th {
-      border: none; }
-  .table .table-dark, .jsgrid .jsgrid-table .table-dark {
-    background: #212529; }
-  .table.table-contextual, .jsgrid .table-contextual.jsgrid-table {
-    color: #ffffff; }
+  color: black;
+  text-align: center;
+}
+
+.table thead th, .jsgrid .jsgrid-table thead th {
+  border-top: 0;
+  border-bottom-width: 1px;
+  font-weight: 500;
+  color: black;
+  font-weight: bold;
+}
+
+.table thead th i, .jsgrid .jsgrid-table thead th i {
+  margin-left: 0.325rem; 
+}
+
+.table th, .jsgrid .jsgrid-table th,
+.table td,
+.jsgrid .jsgrid-table td {
+  vertical-align: middle;
+  font-size: 0.875rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.table th img, .jsgrid .jsgrid-table th img,
+.table td img,
+.jsgrid .jsgrid-table td img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.table th .badge, .jsgrid .jsgrid-table th .badge,
+.table td .badge,
+.jsgrid .jsgrid-table td .badge {
+  margin-bottom: 0;
+}
+
+.table.table-borderless, .jsgrid .table-borderless.jsgrid-table {
+  border: none;
+}
+
+.table.table-borderless tr, .jsgrid .table-borderless.jsgrid-table tr,
+.table.table-borderless td,
+.jsgrid .table-borderless.jsgrid-table td,
+.table.table-borderless th,
+.jsgrid .table-borderless.jsgrid-table th {
+  border: none;
+}
+
+.table .table-dark, .jsgrid .jsgrid-table .table-dark {
+  background: #212529;
+}
+
+.table.table-contextual, .jsgrid .table-contextual.jsgrid-table {
+  color: #ffffff;
+}
 
 .nav-tabs .nav-link {
   background: #ffffff;
   color: #ffffff;
   border-radius: 0;
   border: 1px solid #2c2e33;
-  padding: .75rem 1.5rem; }
-  @media (max-width: 576px) {
-    .nav-tabs .nav-link {
-      padding: 0.3rem 0.5rem; } }
+  padding: .75rem 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .nav-tabs .nav-link {
+    padding: 0.3rem 0.5rem; 
+  } 
+}
 
 .nav-tabs .nav-item:first-child .nav-link {
   border-radius: 4px 0 0 0; }
@@ -13699,6 +13832,84 @@ div.tagsinput {
   padding: 1.875rem 1.75rem;
   width: 100%;
   -webkit-flex-grow: 1;
-  flex-grow: 1; }
+  flex-grow: 1;
+}
 
-/*# sourceMappingURL=maps/style.css.map */
+thead .text-table{
+  color: black;
+}
+
+.foto {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 20px;
+}
+/* h1 {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 20px;
+} */
+/* h1 small {
+  display: block;
+  font-size: 15px;
+  padding-top: 8px;
+  color: gray;
+} */
+.avatar-upload {
+  position: relative;
+  max-width: 205px;
+  margin: 50px auto;
+}
+.avatar-upload .avatar-edit {
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  top: 10px;
+}
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+.avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+  content: "\f040";
+  font-family: 'FontAwesome';
+  color: #757575;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+.avatar-upload .avatar-preview {
+  width: 192px;
+  height: 192px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #F8F8F8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

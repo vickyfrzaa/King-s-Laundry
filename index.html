@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/dataTables.css">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
@@ -94,29 +95,43 @@
               </a>
             </li>
             <li class="nav-item menu-items">
-              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <a class="nav-link" href="profile.html">
                 <span class="menu-icon">
-                    <i class="fas fa-user-circle"></i>
+                  <i class="fas fa-user-circle"></i>
                 </span>
                 <span class="menu-title text-light fw-bold">Profile</span>
-                <i class="menu-arrow"></i>
+              </a>
+            </li>
+            <li class="nav-item menu-items">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class="menu-title text-light fw-bold">Order</span>
+                <i class="menu-arrow text-light"></i>
               </a>
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="order.html">Order</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="orderHistory.html">Order History</a></li>
                 </ul>
               </div>
             </li>
-            <li class="nav-item menu-items">
-              <a class="nav-link" href="pages/forms/basic_elements.html">
+            <!-- <li class="nav-item menu-items">
+              <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <span class="menu-icon">
-                  <i class="mdi mdi-playlist-play"></i>
+                  <i class="fas fa-shopping-cart"></i>
                 </span>
                 <span class="menu-title text-light fw-bold">Order</span>
+                <i class="menu-arrow"></i>
               </a>
-            </li>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="order.html"> Order History </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="orderHistory.html"> Order History </a></li>
+                </ul>
+              </div>
+            </li> -->
             <li class="nav-item menu-items">
               <a class="nav-link" href="pages/tables/basic-table.html">
                 <span class="menu-icon">
@@ -125,47 +140,28 @@
                 <span class="menu-title text-light fw-bold">Info Barang</span>
               </a>
             </li>
-            <li class="nav-item menu-items">
+            <!-- <li class="nav-item menu-items">
               <a class="nav-link" href="pages/charts/chartjs.html">
                 <span class="menu-icon">
                   <i class="mdi mdi-chart-bar"></i>
                 </span>
                 <span class="menu-title text-light fw-bold">Data Transaksi</span>
               </a>
-            </li>
-            <li class="nav-item menu-items">
-              <a class="nav-link" href="pages/icons/mdi.html">
-                <span class="menu-icon">
-                  <i class="mdi mdi-contacts"></i>
-                </span>
-                <span class="menu-title text-light fw-bold">Icons</span>
-              </a>
-            </li>
+            </li> -->
             <li class="nav-item menu-items">
               <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <span class="menu-icon">
                   <i class="mdi mdi-security"></i>
                 </span>
-                <span class="menu-title text-light fw-bold">Order History</span>
-                <i class="menu-arrow"></i>
+                <span class="menu-title text-light fw-bold">Transaksi</span>
+                <i class="menu-arrow text-light"></i>
               </a>
               <div class="collapse" id="auth">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Data Transaksi </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Status Payment </a></li>
                 </ul>
               </div>
-            </li>
-            <li class="nav-item menu-items">
-              <a class="nav-link" href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html">
-                <span class="menu-icon">
-                  <i class="mdi mdi-file-document-box"></i>
-                </span>
-                <span class="menu-title text-light fw-bold">Status Payment</span>
-              </a>
             </li>
           </ul>
         </nav>
@@ -586,90 +582,56 @@
               </div>
               <div class="row">
                 <div class="col-sm-4 grid-margin">
-                  <div class="card rounded-4">
+                  <div class="card card-box rounded-4">
                     <div class="card-body">
-                      <!-- <h5>Revenue</h5> -->
+                      <h1 class="display-3 font-weight-normal">Karyawan</h1>
                       <div class="row">
-                        <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                            <i class="icon-lg fas fa-users text-light ml-auto"></i>
-                        </div>
                         <div class="col-8 col-sm-12 col-xl-8 my-auto">
                           <div class="d-flex d-sm-block d-md-flex align-items-center">
-                            <h1 class="mb-0">20</h1>
-                            <!-- <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p> -->
+                            <h1 class="mb-0 display-3 fw-bold">20</h1>
                           </div>
-                          <h1 class="text-light font-weight-normal display-3">Karyawan</h1>
+                        </div>
+                        <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                          <i class="icon-lg fas fa-suitcase text-danger ml-auto"></i>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
                 <div class="col-sm-4 grid-margin">
-                  <div class="card rounded-4">
+                  <div class="card card-box rounded-4">
                     <div class="card-body">
-                        <!-- <h5>Revenue</h5> -->
-                        <div class="row">
-                          <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                              <i class="icon-lg fas fa-users text-light ml-auto"></i>
-                          </div>
-                          <div class="col-8 col-sm-12 col-xl-8 my-auto">
-                            <div class="d-flex d-sm-block d-md-flex align-items-center">
-                              <h1 class="mb-0">10</h1>
-                              <!-- <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p> -->
-                            </div>
-                            <h1 class="text-light font-weight-normal display-3">Customer</h1>
-                          </div>
-                        </div>
-                      </div>
-                    <!-- <div class="card-body">
-                      <h5>Sales</h5>
+                      <h1 class="display-3 font-weight-normal">Customer</h1>
                       <div class="row">
                         <div class="col-8 col-sm-12 col-xl-8 my-auto">
                           <div class="d-flex d-sm-block d-md-flex align-items-center">
-                            <h2 class="mb-0">$45850</h2>
-                            <p class="text-success ml-2 mb-0 font-weight-medium">+8.3%</p>
+                            <h1 class="mb-0 display-3 fw-bold">10</h1>
                           </div>
-                          <h6 class="text-muted font-weight-normal"> 9.61% Since last month</h6>
                         </div>
                         <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                          <i class="icon-lg mdi mdi-wallet-travel text-danger ml-auto"></i>
+                          <i class="icon-lg fas fa-users text-success ml-auto"></i>
                         </div>
                       </div>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
+                
                 <div class="col-sm-4 grid-margin">
-                  <div class="card rounded-4">
+                  <div class="card card-box rounded-4">
                     <div class="card-body">
-                        <!-- <h5>Revenue</h5> -->
-                        <div class="row">
-                          <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                              <i class="icon-lg fas fa-shopping-cart text-light ml-auto"></i>
-                          </div>
-                          <div class="col-8 col-sm-12 col-xl-8 my-auto">
-                            <div class="d-flex d-sm-block d-md-flex align-items-center">
-                              <h1 class="mb-0">5</h1>
-                              <!-- <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p> -->
-                            </div>
-                            <h1 class="text-light font-weight-normal display-3">Order</h1>
-                          </div>
-                        </div>
-                      </div>
-                    <!-- <div class="card-body">
-                      <h5>Purchase</h5>
+                      <h1 class="display-3 font-weight-normal">Order</h1>
                       <div class="row">
                         <div class="col-8 col-sm-12 col-xl-8 my-auto">
                           <div class="d-flex d-sm-block d-md-flex align-items-center">
-                            <h2 class="mb-0">$2039</h2>
-                            <p class="text-danger ml-2 mb-0 font-weight-medium">-2.1% </p>
+                            <h1 class="mb-0 display-3 fw-bold">5</h1>
                           </div>
-                          <h6 class="text-muted font-weight-normal">2.27% Since last month</h6>
                         </div>
                         <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                          <i class="icon-lg mdi mdi-monitor text-success ml-auto"></i>
+                          <i class="icon-lg fas fa-shopping-cart text-dark ml-auto"></i>
                         </div>
                       </div>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1070,6 +1032,7 @@
     <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
     <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
     <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="js/dataTables.js"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
     <script src="assets/js/off-canvas.js"></script>
